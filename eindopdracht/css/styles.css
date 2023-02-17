@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* :root {
+
+} */
+
+html {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+div:first-of-type {
+	background-color: red;
+	width: 500px;
+	height: 300px;
+	border-radius: 10px;
+	box-shadow: 10px 10px 14px black;
+}
+
+div:nth-of-type(2) {
+	position: absolute;
+	background-color: rgb(55, 54, 54);
+	width: 480px;
+	height: 300px;
+	top: 88px;
+}
+
+input {
+	visibility: hidden;
+}
+
+div:nth-of-type(3) {
+	width: 30px;
+    height: 10px;
+    background: #555;
+    margin: 20px 80px;
+    position: absolute;
+	left: 140px;
+	top: 100px;
+    border-radius: 3px;
+}
+
+div:nth-of-type(3) p {
+	color: white;
+	font-size: 10px;
+	position: absolute;
+	top: 5px;
+	text-align: center;
+}
+
+div:nth-of-type(3) label {
+	display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: -3px;
+    left: -3px;
+
+    background: #ccc;
+}
+
+div:nth-of-type(3) input[type=checkbox]:checked + label {
+	left: 15px;
+}
