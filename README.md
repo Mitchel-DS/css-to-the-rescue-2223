@@ -18,4 +18,11 @@ Omdat ik het lastig vond om te beginnen heb ik maar gewoon een paar ideeen op pa
 - Dit was ik idd al van plan. In mijn concept heeft het display alleen tekst, maar dat is natuurlijk wat aan de "makkelijke/saaie" kant.
 
 ### Week 2 
+Begonnen met het maken van de aparte keys. Eerst elke div indiviueel gestyled en gepositioneerd.
+Vervolgens kreeg ik de feedback om flexbox te gebruiken om de keys makkelijker en met minder code naast elkaar te zetten.
 
+Daarna de werking van de power button laten werken. Het deed eerst niks, maar nu doet het de display "aan", aka het veranderd van kleur.
+
+En dan ook natuurlijk de display. Voor nu een WIP en nog niet gepositioneerd op de juiste plek, maar even aan de onderkant voor meer duidelijkheid.
+
+![progress](/eindopdracht/images/progress2_1.png "Progress week 2_1")
