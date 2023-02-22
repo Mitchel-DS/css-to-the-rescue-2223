@@ -13,4 +13,7 @@ Omdat ik het lastig vond om te beginnen heb ik maar gewoon een paar ideeen op pa
 #### Feedback / insights 
 "Maak gewoon een display. Laat zien dat die key iets doet. Er zijn geen speakers, dus misschien kun je elke key een sound wave laten maken."
 
-Dit was ik idd al van plan. In mijn concept heeft het display alleen tekst, maar dat is natuurlijk wat aan de "makkelijke/saaie" kant.
+- Dit was ik idd al van plan. In mijn concept heeft het display alleen tekst, maar dat is natuurlijk wat aan de "makkelijke/saaie" kant.
+
+### Week 2 
+
