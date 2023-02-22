@@ -6,6 +6,8 @@ Als eindopdracht voor CCS to the Rescue heb ik gekozen voor de 'opdracht' Stijlv
 ### Week 1
 Omdat ik het lastig vond om te beginnen heb ik maar gewoon een paar ideeen op papier gezet. Uit deze ideeen ben ik uiteindelijk gegaan voor een MIDI keyboard. Ik heb hier een sketch van gemaakt, om de verschillende functie op kaart te zetten (zie figuur 1).
 
+![original](/eindopdracht/images/orginal.jpeg "Original")
+
 ![concept](/eindopdracht/images/concept.png "Concept")
 
 ![progress](/eindopdracht/images/progress1_1.png "Progress")
