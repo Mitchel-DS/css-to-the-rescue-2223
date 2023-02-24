@@ -4,9 +4,10 @@
 	box-sizing: border-box;
 	position: relative;
 }
-
+/* root variables for styling */
 :root {
-	--background-color: #555;
+	--accent-color-red: #BA0010;
+	--shadow-color : #000;
 }
 
 html {
@@ -14,10 +15,16 @@ html {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+/* centering everything in the middle :) */
 main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+/* hides checkbox */
+input {
+	visibility: hidden;
 }
 
 /* styling + positioning case */
@@ -28,24 +35,22 @@ section:nth-of-type(1) {
 }
 
 section:nth-of-type(1) div:nth-of-type(1) {
-	background-color: red;
-	width: 500px;
-	height: 300px;
+	background-color: var(--accent-color-red);
+	width: 640px;
+	height: 330px;
 	border-radius: 10px;
-	box-shadow: 10px 10px 14px black;
+	box-shadow: 10px 10px 14px var(--shadow-color);
 }
 
 section:nth-of-type(1) div:nth-of-type(2) {
-	background-color: rgb(55, 54, 54);
-	width: 480px;
-	height: 300px;
+	background: linear-gradient(to right, #282728 0%, #2E2B2C 100%);
+	width: 620px;
+	height: 320px;
 	position: absolute;
-	top: 68px;
+	border-radius: 10px;
+	top: 75px;
 }
 
-input {
-	visibility: hidden;
-}
 
 /* styling + positioning power button */
 section:nth-of-type(2) div:nth-of-type(1) {
@@ -53,12 +58,13 @@ section:nth-of-type(2) div:nth-of-type(1) {
 	height: 10px;
 	background: #555;
 	position: absolute;
-	top: -185px;
+	top: -270px;
+	left: -290px;
 	border-radius: 3px;
 }
 
 section:nth-of-type(2) div:nth-of-type(1) p {
-	color: red;
+	color: var(--accent-color-red);
 	font-size: 10px;
 	position: absolute;
 	top: 5px;
@@ -78,19 +84,21 @@ section:nth-of-type(2) div:nth-of-type(1) label {
 	background: #ccc;
 }
 
+/* power button animation thing */
 section:nth-of-type(2) div:nth-of-type(1) input[type=checkbox]:checked+label {
 	left: 15px;
 }
 
+/* power button turning display on animation thing */
 body:has(section:nth-of-type(2) div:nth-of-type(1) input[type=checkbox]:checked+label) section:nth-of-type(4) div:nth-of-type(2) {
-	background-color: red;
+	background: rgba(107, 115, 145, 0.797);
 }
 
-/* styling + positioning keys */
+/* styling + positioning piano keys */
 section:nth-of-type(3) {
 	display: flex;
 	position: absolute;
-	top: 220px;
+	top: 248px;
 }
 
 section:nth-of-type(3) label {
@@ -101,14 +109,15 @@ section:nth-of-type(3) label {
 	border-left: 1px solid #bbb;
 	border-bottom: 1px solid #bbb;
 	border-radius: 0 0 5px 5px;
-	/* box-shadow: -1px 0 0 rgba(255, 255, 255, 0.8) inset, 0 0 5px #ccc inset, 0 0 3px rgba(0, 0, 0, 0.2); */
+	box-shadow: -1px 0 0 rgba(255, 255, 255, 0.8) inset, 0 12px 5px #ccc inset, 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
+/* piano keys animation WIP */
 section:nth-of-type(3) label:has(input[type=checkbox]:checked) {
-	background: red;
+	box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.8) inset, 0 12px 5px #00000063 inset, 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
-/* styling + positioning display */
+/* styling + positioning display screen */
 section:nth-of-type(4) {
 	display: flex;
 	flex-direction: column;
@@ -117,17 +126,21 @@ section:nth-of-type(4) {
 }
 
 section:nth-of-type(4) div:nth-of-type(1) {
-	margin: 10px;
-	height: 200px;
-	width: 400px;
-	background-color: black;
+
+	height: 60px;
+	width: 130px;
+	background-color: var(--shadow-color);
+	position: absolute;
+	top: -310px;
 }
 
 section:nth-of-type(4) div:nth-of-type(2) {
 	position: absolute;
-	margin: 10px;
-	height: 175px;
-	width: 350px;
+
+	height: 40px;
+	width: 90px;
 	background-color: #555;
+	position: absolute;
+	top: -300px;
 }
 
