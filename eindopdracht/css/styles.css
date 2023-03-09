@@ -4,10 +4,11 @@
 	box-sizing: border-box;
 	position: relative;
 }
+
 /* root variables for styling */
 :root {
 	--accent-color-red: #BA0010;
-	--shadow-color : #000;
+	--shadow-color: #000;
 }
 
 html {
@@ -59,8 +60,8 @@ section:nth-of-type(1) div:nth-of-type(2) {
 
 /* styling + positioning power button */
 section:nth-of-type(2) div:nth-of-type(1) {
-	width: 30px;
-	height: 10px;
+	width: 55px;
+	height: 29px;
 	background: #555;
 	position: absolute;
 	top: -270px;
@@ -72,32 +73,59 @@ section:nth-of-type(2) div:nth-of-type(1) p {
 	color: var(--accent-color-red);
 	font-size: 10px;
 	position: absolute;
-	top: 5px;
+	top: -1px;
+	left: 8px;
 	text-align: center;
+	z-index: 100;
 }
 
 section:nth-of-type(2) div:nth-of-type(1) label {
 	display: block;
-	width: 16px;
-	height: 16px;
-	border-radius: 50%;
+	width: 50px;
+	height: 25px;
+	BORDER-RADIUS: 3px;
 	transition: all .5s ease;
 	cursor: pointer;
 	position: absolute;
-	top: -3px;
-	left: -3px;
-	background: #ccc;
+	top: 2px;
+	left: 2px;
+	background: linear-gradient(to right, #282728 0%, #2E2B2C 100%);
 }
 
 /* power button animation thing */
-section:nth-of-type(2) div:nth-of-type(1) input[type=checkbox]:checked+label {
-	left: 15px;
+body:has([aria-label="power"] input:checked+label) section:nth-of-type(2) div:nth-of-type(1) {
+	animation: powerFlash 2s ease-in-out infinite;
+}
+
+@keyframes powerFlash {
+	0% {
+		background-color: var(--accent-color-red);
+	}
+
+	100% {
+		background-color: #555;
+	}
 }
 
 /* power button turning display on animation thing */
-body:has(section:nth-of-type(2) div:nth-of-type(1) input[type=checkbox]:checked+label) 
-section:nth-of-type(4) div:nth-of-type(2) {
+body:has([aria-label="power"] input:checked+label) section:nth-of-type(4) div:nth-of-type(2) {
 	background: rgba(107, 115, 145, 0.797);
+	animation: powerON 0.5s ease-in-out;
+}
+
+@keyframes powerON {
+	0% {
+		box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.8) inset, 0 12px 5px #ccc inset, 0 0 3px rgba(0, 0, 0, 0.2);
+	}
+
+	100% {
+		box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.8) inset, 0 12px 5px #00000063 inset, 0 0 3px rgba(0, 0, 0, 0.2);
+	}
+}
+
+/* power button + key */
+body:has([aria-label="power"] input:checked):has([aria-label="keys"] input:checked) section:nth-of-type(5) {
+	display: flex;
 }
 
 /* styling + positioning piano keys */
@@ -119,7 +147,7 @@ section:nth-of-type(3) label {
 }
 
 /* piano keys animation WIP */
-section:nth-of-type(3) label:has(input[type=checkbox]:checked)  {
+section:nth-of-type(3) label:has(input[type=checkbox]:checked) {
 	box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.8) inset, 0 12px 5px #00000063 inset, 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
@@ -148,4 +176,46 @@ section:nth-of-type(4) div:nth-of-type(2) {
 	position: absolute;
 	top: -295px;
 }
+
+/* styling + postioning display animation */
+section:nth-of-type(5) {
+	display: none;
+	position: absolute;
+	top: 80px;
+	height: 100px;
+	transform: rotate(180deg);
+}
+
+section:nth-of-type(5) > div {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin: 0 2px;
+	border-radius: 15px;
+	background-color: #4b9cdb;
+}
+
+section:nth-of-type(5) div:nth-of-type(1) {
+	animation: loadingAnimation 1.5s 1s infinite;
+}
+
+section:nth-of-type(5) div:nth-of-type(2) {
+	animation: loadingAnimation 1.5s 2s infinite;
+}
+
+section:nth-of-type(5) div:nth-of-type(3) {
+	animation: loadingAnimation 1.5s 1.2s infinite;
+}
+
+@keyframes loadingAnimation {
+	0% {
+		transform: translate(0, 0);
+	  }
+	  50% {
+		transform: translate(0, 15px);
+	  }
+	  100% {
+		transform: translate(0, 0);
+	  }
+  }
 
