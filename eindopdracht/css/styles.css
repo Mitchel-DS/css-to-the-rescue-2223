@@ -7,6 +7,7 @@
 
 /* root variables for styling */
 :root {
+	--main-color: linear-gradient(to right, #282728 0%, #2E2B2C 100%);
 	--accent-color-red: #BA0010;
 	--shadow-color: #000;
 }
