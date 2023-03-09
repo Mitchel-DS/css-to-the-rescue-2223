@@ -22,6 +22,11 @@ main {
 	align-items: center;
 }
 
+/* makes labels seem clickable */
+label {
+	cursor: pointer;
+}
+
 /* hides checkbox */
 input {
 	visibility: hidden;
@@ -90,7 +95,8 @@ section:nth-of-type(2) div:nth-of-type(1) input[type=checkbox]:checked+label {
 }
 
 /* power button turning display on animation thing */
-body:has(section:nth-of-type(2) div:nth-of-type(1) input[type=checkbox]:checked+label) section:nth-of-type(4) div:nth-of-type(2) {
+body:has(section:nth-of-type(2) div:nth-of-type(1) input[type=checkbox]:checked+label) 
+section:nth-of-type(4) div:nth-of-type(2) {
 	background: rgba(107, 115, 145, 0.797);
 }
 
@@ -113,9 +119,10 @@ section:nth-of-type(3) label {
 }
 
 /* piano keys animation WIP */
-section:nth-of-type(3) label:has(input[type=checkbox]:checked) {
+section:nth-of-type(3) label:has(input[type=checkbox]:checked)  {
 	box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.8) inset, 0 12px 5px #00000063 inset, 0 0 3px rgba(0, 0, 0, 0.2);
 }
+
 
 /* styling + positioning display screen */
 section:nth-of-type(4) {
@@ -126,9 +133,8 @@ section:nth-of-type(4) {
 }
 
 section:nth-of-type(4) div:nth-of-type(1) {
-
-	height: 60px;
-	width: 130px;
+	height: 150px;
+	width: 325px;
 	background-color: var(--shadow-color);
 	position: absolute;
 	top: -310px;
@@ -136,11 +142,10 @@ section:nth-of-type(4) div:nth-of-type(1) {
 
 section:nth-of-type(4) div:nth-of-type(2) {
 	position: absolute;
-
-	height: 40px;
-	width: 90px;
+	height: 120px;
+	width: 270px;
 	background-color: #555;
 	position: absolute;
-	top: -300px;
+	top: -295px;
 }
 
