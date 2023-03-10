@@ -1,5 +1,24 @@
 # CSS to the Rescue @cmda-minor-web 2022 - 2023
 
+## Table of contents
+
+- [Description](#description)
+
+## Introduction
+
+During this project it's all about CSS. We have to experiment with new CSS techniques and try to implement them into one of the assignments using only vanilla HTML and CSS. No javascript allowed.
+
+The assignments we could pick from were:
+- A modulair controle panel.
+- An interactive fireworkshow.
+- A 3D rubiks cube.
+- Tailwind without Tailwind.
+
+## Live demo
+Check out the live demo [here.](mitchel-ds.github.io/css-to-the-rescue-2223/eindopdracht/)
+
+## What is this project?
+
 Als eindopdracht voor CCS to the Rescue heb ik gekozen voor de 'opdracht' Stijlvast bedieningspaneel. Het idee is om een MIDI keyboard te maken met verschillende interactieve functies.
 
 ## Week 1
@@ -52,3 +71,6 @@ Als je power aanzet en een key indrukt, dan gaat de display aan en wordt de powe
 ![progress](/eindopdracht/images/week4/progress4_4.png "Progress week 4_4")
 Als je nu een key indrukt zal er een animation verschijnen op het display. Het doet niks geks voor nu, maar het is een begin.
 ![progress](/eindopdracht/images/week4/progress4_5.png "Progress week 4_5")
+
+## License
+This project is licensed under the MIT License - see the LICENSE.md file for details
