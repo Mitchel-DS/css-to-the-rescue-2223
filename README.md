@@ -2,7 +2,22 @@
 
 ## Table of contents
 
-- [Description](#description)
+- [CSS to the Rescue @cmda-minor-web 2022 - 2023](#css-to-the-rescue-cmda-minor-web-2022---2023)
+	- [Table of contents](#table-of-contents)
+	- [Introduction](#introduction)
+	- [Live demo](#live-demo)
+	- [What is this project?](#what-is-this-project)
+	- [Week 1 - Concept](#week-1---concept)
+		- [Feedback / insights](#feedback--insights)
+	- [Week 2](#week-2)
+	- [Week 3 - Holiday](#week-3---holiday)
+	- [Week 4](#week-4)
+	- [Assignment resit](#assignment-resit)
+	- [Reflection](#reflection)
+		- [Version 1.0](#version-10)
+		- [Version 2.0](#version-20)
+		- [New CSS techniques used](#new-css-techniques-used)
+	- [License](#license)
 
 ## Introduction
 
