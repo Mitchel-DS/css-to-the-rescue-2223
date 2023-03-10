@@ -15,62 +15,109 @@ The assignments we could pick from were:
 - Tailwind without Tailwind.
 
 ## Live demo
-Check out the live demo [here.](mitchel-ds.github.io/css-to-the-rescue-2223/eindopdracht/)
+
+Check out the live demo [here.](https://mitchel-ds.github.io/css-to-the-rescue-2223/eindopdracht/)
 
 ## What is this project?
 
-Als eindopdracht voor CCS to the Rescue heb ik gekozen voor de 'opdracht' Stijlvast bedieningspaneel. Het idee is om een MIDI keyboard te maken met verschillende interactieve functies.
+For the assignment I chose the modulair control panel. The idea is to make a MIDI keyboard with different interactive functions that show of these new CSS techniques.
 
-## Week 1
-Omdat ik het lastig vond om te beginnen heb ik maar gewoon een paar ideeen op papier gezet. Uit deze ideeen ben ik uiteindelijk gegaan voor een MIDI keyboard. Ik heb hier een sketch van gemaakt, om de verschillende functie op kaart te zetten.
+## Week 1 - Concept
+
+Before I got started I had some trouble with coming up with an idea, that could work. I had a few ideas, but I ended up with a MIDI keyboard. I thought it would be a fun project to make and it would be a good challenge to make it interactive.
+
+I started with making a sketch on how I wanted the keyboard to look like and what I wanted to do what. 
 
 ![original](/eindopdracht/images/week1/orginal.jpeg "Original")
 
+This is what the original design looked like. I wanted to make something similar, but with interactive functions.
+
 ![concept](/eindopdracht/images/week1/concept.png "Concept")
+
+Here you can see the concept sketch I made for it and what I imagined every thing did and what was supposed to happen.
 
 ![progress](/eindopdracht/images/week1/progress1_1.png "Progress")
 
-### Feedback / insights 
-*"Maak gewoon een display. Laat zien dat die key iets doet. Er zijn geen speakers, dus misschien kun je elke key een sound wave laten maken."*
+I started with making the design, the keys div and a power button.
 
-- Dit was ik idd al van plan. In mijn concept heeft het display alleen tekst, maar dat is natuurlijk wat aan de "makkelijke/saaie" kant.
+### Feedback / insights 
+
+*"Just make a display. Show that the key does something. There are no speakers, so maybe you can make a sound wave for each key."*
+
+- This is something I was planning on doing. In my concept the display only has text, but that's a bit boring.
 
 ## Week 2 
-Begonnen met het maken van de aparte keys. Eerst elke div indiviueel gestyled en gepositioneerd.
-Vervolgens kreeg ik de feedback om flexbox te gebruiken om de keys makkelijker en met minder code naast elkaar te zetten.
+
+Started with making the individual keys. First styled and positioned each div individually. 
+
+Next, I got some feedback from a classmate that I could use flexbox to make the keys positioned next to each other. This was easier and with less code to write.
 
 ![progress](/eindopdracht/images/week2/progress2_1.png "Progress week 2_1")
 
-Daarna de werking van de power button laten werken. Het deed eerst niks, maar nu doet het de display "aan", aka het veranderd van kleur.
+Next, I got the power button to work. It didn't do anything before, but now it turns the display "on", aka it changes color.
 
 ![progress](/eindopdracht/images/week2/progress2_2.png "Progress week 2_2")
 
-En dan ook natuurlijk de display. Voor nu een WIP en nog niet gepositioneerd op de juiste plek, maar even aan de onderkant voor meer duidelijkheid.
+And then of course the display. For now a 'work in progress' and not positioned in the right place, but just at the bottom for more clarity.
 
 ![progress](/eindopdracht/images/week2/progress2_3.png "Progress week 2_3")
 
-## Week 3 - Vakantie
-Tijdens de vakantie heb ik geprobeerd om wat meer dingen aan het werken te laten krijgen.
+## Week 3 - Holiday
 
-Hier heb ik de styling van de toetsen aangepast, zodat het beter lijkt wanneer de toets wordt ingedrukt.
+During the holiday I tried to get some more things working. Here I changed the styling of the keys, so it looks better when the key is pressed. Made it more realistic.
 
 ![progress](/eindopdracht/images/week3/progress3_2.png "Progress week 3_2")
 
-Hier is de styling van het display het gaan aan wanneer de power wordt aangedaan.
-
 ![progress](/eindopdracht/images/week3/progress3_1.png "Progress week 3_1")
+
+Here I got the styling of the display to work when the power is turned on. 
+
 ![progress](/eindopdracht/images/week3/progress3_3.png "Progress week 3_3")
 
 ## Week 4
-Styling van power button aangepast. Nu lijkt het meer op een echte power button.
+
+Styling of the power button changed. Now it looks more like a real power button.
+
 ![progress](/eindopdracht/images/week4/progress4_1.png "Progress week 4_1")
-Als je een key drukt zonder power gebeurt er niks. 
+ 
+If you press a key without power nothing happens.
+
 ![progress](/eindopdracht/images/week4/progress4_2.png "Progress week 4_2")
-Als je power aanzet en een key indrukt, dan gaat de display aan en wordt de power button rood. + blijft het knipperen zolang het aan is.
+
+If you turn on the power and press a key, the display turns on and the power button turns red. The power button also keeps blinking while the power is on.
+
 ![progress](/eindopdracht/images/week4/progress4_3.png "Progress week 4_3")
+
 ![progress](/eindopdracht/images/week4/progress4_4.png "Progress week 4_4")
-Als je nu een key indrukt zal er een animation verschijnen op het display. Het doet niks geks voor nu, maar het is een begin.
+
+If you now press a key, an animation will appear on the display. It doesn't do anything weird for now, but it's a start.
+
 ![progress](/eindopdracht/images/week4/progress4_5.png "Progress week 4_5")
 
+Pressing anything else doesn't do anything yet.
+
+## Assignment resit
+
+I didn't pass for this assignment at first. So I had to do a resit. I got some feedback from my teacher, which was:
+
+*"You didn't experiment enough with the css techniques. It just isn't enough. There's only one animation that plays when pressing a key. When pressing anything else nothing really happens. Show that you use multiple new techniques. The display screen is basically screaming for you to use it for something like that."*
+
+## Reflection
+
+### Version 1.0 
+
+I underestamated this assignment at first, I thought during my first submission that I experimented enough and did enough research. For me I used a lot of new things and tried to implement them in this project. 
+
+### Version 2.0
+
+## New CSS techniques used
+
+I also made a list of all the CSS techniques I ended up learning more about.
+
+- animation
+- has() selector
+- :checked
+
 ## License
+
 This project is licensed under the MIT License - see the LICENSE.md file for details
