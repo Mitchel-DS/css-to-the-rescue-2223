@@ -10,6 +10,16 @@
 	--main-color: linear-gradient(to right, #282728 0%, #2E2B2C 100%);
 	--accent-color-red: #BA0010;
 	--shadow-color: #000;
+	--bg-color-1: black;
+    --bg-color-2: blue;
+    --bg-color-3: yellow;
+    --bg-color-4: green;
+    --bg-color-5: red;
+    --bg-color-6: purple;
+    --bg-color-7: orange;
+    --bg-color-8: pink;
+    --bg-color-9: brown;
+    --bg-color-10: grey;
 }
 
 html {
@@ -74,8 +84,8 @@ section:nth-of-type(2) div:nth-of-type(1) p {
 	color: var(--accent-color-red);
 	font-size: 10px;
 	position: absolute;
-	top: -1px;
-	left: 8px;
+	top: -2px;
+	left: 7px;
 	text-align: center;
 	z-index: 100;
 }
@@ -114,15 +124,54 @@ body:has([aria-label="power"] input:checked+label) section:nth-of-type(4) div:nt
 	animation: powerON 0.5s ease-in-out;
 }
 
+
 @keyframes powerON {
 	0% {
 		box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.8) inset, 0 12px 5px #ccc inset, 0 0 3px rgba(0, 0, 0, 0.2);
 	}
-
+	
 	100% {
 		box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.8) inset, 0 12px 5px #00000063 inset, 0 0 3px rgba(0, 0, 0, 0.2);
 	}
 }
+
+body:has([aria-label="power"] input:checked+label) {
+	animation: powered 5s infinite;
+}
+
+@keyframes powered {
+    0%, 9% {
+        background-color: var(--bg-color-1);
+    }
+    10%, 19% {
+        background-color: var(--bg-color-2);
+    }
+    20%, 29% {
+        background-color: var(--bg-color-2);
+    }
+    30%, 39% {
+        background-color: var(--bg-color-3);
+    }
+    40%, 49% {
+        background-color: var(--bg-color-4);
+    }
+    50%, 59% {
+        background-color: var(--bg-color-5);
+    }
+    60%, 69% {
+        background-color: var(--bg-color-6);
+    }
+    70%, 79% {
+        background-color: var(--bg-color-7);
+    }
+    80%, 89% {
+        background-color: var(--bg-color-8);
+    }
+    90%, 100% {
+        background-color: var(--bg-color-9);
+    }
+}
+
 
 /* power button + key */
 body:has([aria-label="power"] input:checked):has([aria-label="keys"] input:checked) section:nth-of-type(5) {
