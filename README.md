@@ -132,6 +132,17 @@ This time I used a lot more new things and tried to implement it as much as poss
 ![progress](/eindopdracht/images/herkansing/3.png "Progress herkansing 3")
 ![progress](/eindopdracht/images/herkansing/4.png "Progress herkansing 4")
 
+![animation](/eindopdracht/images/herkansing/Screenshot%202023-05-25%20at%2010.27.55%20AM.png "animation")
+Here is an example of some areas where I used the :has in combination with the :checked selector. I used this to make the display change color when the power is turned on.
+
+![animation](/eindopdracht/images/herkansing/Screenshot%202023-05-25%20at%2010.28.02%20AM.png "animation")
+This is the example of the car animation. I made use of the transform rotate and translate properties. It was really difficult to time everything right and make sure everything was delayed enough to work in time.
+
+## Future updates
+I wanted to implement some 3d elements into the project and if i had enough time I would like to make a key insert animation.
+
+Also I looked in to has and having multiple input checked.
+
 ## New CSS techniques used
 
 I also made a list of all the CSS techniques I ended up learning more about.
