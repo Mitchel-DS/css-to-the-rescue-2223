@@ -125,6 +125,13 @@ I underestamated this assignment at first, I thought during my first submission 
 
 ### Version 2.0
 
+This time I used a lot more new things and tried to implement it as much as possible. I used a lot of new CSS techniques and tried to make it as interactive as possible. I also tried to make it look as realistic as possible.
+
+![progress](/eindopdracht/images/herkansing/1.png "Progress herkansing 1")
+![progress](/eindopdracht/images/herkansing/2.png "Progress herkansing 2")
+![progress](/eindopdracht/images/herkansing/3.png "Progress herkansing 3")
+![progress](/eindopdracht/images/herkansing/4.png "Progress herkansing 4")
+
 ## New CSS techniques used
 
 I also made a list of all the CSS techniques I ended up learning more about.
@@ -132,6 +139,9 @@ I also made a list of all the CSS techniques I ended up learning more about.
 - animation
 - has() selector
 - :checked
+- transform (rotate, translate, scale)
+- keyframes
+
 
 ## License
 
